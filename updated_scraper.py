@@ -45,7 +45,7 @@ def scrape():
                     except:
                         temp_list.append("")
 
-            # Obtenha a Tag do Hyperlink
+            # Obtenha a Tag do Hiperlink
             hyperlink_li_tag = li_tags[0]
 
             temp_list.append("https://exoplanets.nasa.gov"+ hyperlink_li_tag.find_all("a", href=True)[0]["href"])
